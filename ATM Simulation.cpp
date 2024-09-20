@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
-class ATM
+class ATM      //creating class
 {
 private:
     int balance;
 public:
-    ATM(int bal){
+    ATM(int bal){  //creating conatructor
         balance = bal;
     }
     int getBalance(){
@@ -23,7 +23,7 @@ public:
         balance += amount;
     }
 };
-main()
+int main()
 {
     ATM atm(1000);
     int choice,amount,success;
@@ -73,6 +73,7 @@ main()
         cin>>option;
     }
     while(option == 'y'|| option == 'Y');
-    //cout<<"Your Balance: "<<atm.getBalance();
+   ;
+    retrurn 0;
 }
 
